@@ -128,6 +128,6 @@ where each row contains the pid, state, name and father's pid of each process.
 └── usr: User programs.
 ```
 
-## Credit:
+## Credit
 - Originally ported by: Hongqing LI, ZhifengHU (2020-2021)
-- Maintained by: Xiaoyu HAN, Runyu Peng, Yifan TAN, Zhenliang XUE, Liang ZHANG
+- Maintained by: Xiaoyu HAN, Runyu Peng, Yifan TAN, Zhenliang XUE, Liang ZHANG (2021-2022)
