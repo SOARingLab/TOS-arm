@@ -1,12 +1,13 @@
 # Teaching Operating System (TOS) - arm version
 
-Yet another unix-like toy operating system running on Raspberry Pi 3/4, which is built when I was preparing [labs](https://github.com/FDUCSLG/OS-2020Fall-Fudan/) for operating system course at Fudan University, following the classic framework of [xv6](https://github.com/mit-pdos/xv6-public/).
+Yet another Unix-like teaching (or toy, if you prefer) operating system kernel for the ARM ISA (named as TOS-arm).  It was initially ported from MIT's [xv6](https://github.com/mit-pdos/xv6-public/) for [OS Labs](https://github.com/FDUCSLG/OS-2020Fall-Fudan/) at Fudan University (Fall, 2020-2021). It will be maintained and developed for the OS teaching at Fudan. 
 
-Tested on Raspberry Pi 3A+, 3B+, 4B.
+Tested on Raspberry Pi 3A+, 3B+, 4B, and QEMU.
 
-## Related works
+## Reference
 
-- [linux](https://github.com/raspberrypi/linux): real world operating system
+- [linux](https://github.com/raspberrypi/linux): a real world operating system
+- [xv6](https://github.com/mit-pdos/xv6-public/): a simple teaching operating system
 - [circle](https://github.com/rsta2/circle): contains lots of portable drivers
 - [s-matyukevich's](https://github.com/s-matyukevich/raspberry-pi-os)
 - [bztsrc's](https://github.com/bztsrc/raspi3-tutorial)
@@ -52,7 +53,7 @@ mkdir -p qemu/build
 (cd qemu/build && ../configure --target-list=aarch64-softmmu && make -j8)
 ```
 
-On some OS such as CentOS, you may also need to install the following dependencies
+On some OS such as openEuler or CentOS, you may also need to install the following dependencies
 
 ```
 yum install ninja-build
@@ -127,3 +128,6 @@ where each row contains the pid, state, name and father's pid of each process.
 └── usr: User programs.
 ```
 
+## Credit:
+- Originally ported by: Hongqing LI, ZhifengHU (2020-2021)
+- Maintained by: Xiaoyu HAN, Runyu Peng, Yifan TAN, Zhenliang XUE, Liang ZHANG
