@@ -34,7 +34,7 @@ Tested on Raspberry Pi 3A+, 3B+, 4B, and QEMU.
 
 ## Prerequisite
 
-For Ubuntu 20.04 on x86, just run `make init` and skip this section.
+For Ubuntu 20.04 on x86, just run `make init` and skip rest words of this section.
 
 ### GCC toolchain
 
